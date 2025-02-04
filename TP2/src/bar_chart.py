@@ -49,7 +49,7 @@ def draw(fig, data, mode):
             name=player,
             hovertemplate=get_hover_template(player, mode),
         ))
-    fig.update_layout(xaxis_title='Acts')
+    fig.update_layout(barmode='stack', xaxis= {'tickprefix': 'Act '})
     return fig
 
 
